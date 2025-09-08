@@ -21,7 +21,6 @@ Supervisor: Dr. Biri Arun, Dept. of CSE, NIT Arunachal Pradesh
 ## Simulation
 Project is using robotic simulation [V-REP EDU](http://www.coppeliarobotics.com/). To setup V-REP environment follow instruction described in [gym-vrep](https://github.com/Souphis/gym-vrep) repository.
 ### 1. Install dependencies
-    ```bash
     pip install -r requirements.txt
 
 ### 2. To run training just run command:
