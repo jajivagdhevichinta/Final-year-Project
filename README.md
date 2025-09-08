@@ -26,3 +26,6 @@ Supervisor: Dr. Biri Arun, Dept. of CSE, NIT Arunachal Pradesh
 
 ### 3. Evaluate
     python src/eval.py
+
+### Result
+![Alt text for the image](https://github.com/jajivagdhevichinta/Final-year-Project/blob/main/file_2025-05-29_06.39.45.png)
