@@ -3,7 +3,7 @@
 
 This repository contains our final-year B.Tech project at NIT Arunachal Pradesh.  
 It extends the baseline DDPG implementation with advanced DRL algorithms (TD3, SAC, PPO), domain randomization, sensor fusion and curriculum learning.
-Following project was a part of my master thesis. Current version is a little bit modified and much improved. The project is using modified algorithm Deterministic Policy Gradient (Lillicrap et al.arXiv:1509.02971) (written in Tensorflow) to control mobile robot. The main idea was to learn mobile robot navigate to goal and also avoid obstacles. For obstacles avoidance, robot is using 5 ultrasonic sensors. For navigation task, required information (like absolute pose) are taken from simulation engine. That's a little hack. However, more realistic (like odometry) pose estimation can be found in gym-vrep.
+Current version is a little bit modified and much improved. The project is using modified algorithm Deterministic Policy Gradient ([Lillicrap et al.arXiv:1509.02971](https://arxiv.org/pdf/1509.02971.pdf)) (written in Tensorflow) to control mobile robot. The main idea was to learn mobile robot navigate to goal and also avoid obstacles. For obstacles avoidance, robot is using 5 ultrasonic sensors. For navigation task, required information (like absolute pose) are taken from simulation engine. That's a little hack. However, more realistic (like odometry) pose estimation can be found in [gym-vrep](https://github.com/Souphis/gym-vrep).
 
 ## Authors
 Jaji Vagdhevi Chinta · Rakesh Kumar Swain · Sachin Pathak · Piyush Randeep  
@@ -18,15 +18,17 @@ Supervisor: Dr. Biri Arun, Dept. of CSE, NIT Arunachal Pradesh
 - Training & evaluation scripts
 
 ## Getting Started
+## Simulation
+Project is using robotic simulation [V-REP EDU](http://www.coppeliarobotics.com/). To setup V-REP environment follow instruction described in [gym-vrep](https://github.com/Souphis/gym-vrep) repository.
 ### 1. Install dependencies
     ```bash
     pip install -r requirements.txt
 
-### 2. Train
-    python src/train.py --algo sac
+### 2. To run training just run command:
+    python main.py --train
 
-### 3. Evaluate
-    python src/eval.py
+### 3. To run testing just run command:
+    python main.py
 
 ### Result
 ![Alt text for the image](https://github.com/jajivagdhevichinta/Final-year-Project/blob/main/file_2025-05-29_06.39.45.png)
